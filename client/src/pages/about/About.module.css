@@ -1,0 +1,59 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;   
+    flex-wrap: wrap;          
+    gap: 3rem;                 
+    margin: 3rem auto;
+    max-width: 1300px;        
+    padding: 2rem;
+    /*border: 1px solid green;*/
+    animation: fade-in 3s ease;
+    
+}
+
+.aboutTextContatiner {
+    flex: 1;                  
+    min-width: 250px;          
+    max-width: 580px;      
+    /*border: 1px solid red;*/
+}
+
+.aboutTitle { 
+    font-size: clamp(3rem, 4vw, 5rem); /* Font scaling */
+    margin-bottom: 0.5rem;
+    
+}
+
+.aboutPosition {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.aboutParagraph {
+    line-height: 1.6;
+}
+
+.headShotContainer {
+    /*border: 1px solid blue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headShot { 
+    border-radius: 10%;
+    max-width: 100%;
+    height: auto;      
+        
+}
+
+@media (max-width: 768px) {
+    .aboutContainer {
+        flex-direction: column;
+    }
+    
+   
+
+}
