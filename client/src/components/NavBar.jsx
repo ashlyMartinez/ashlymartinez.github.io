@@ -5,9 +5,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function NavBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" fixed="top" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Ashly Martinez</Navbar.Brand>
+        <Navbar.Brand href="#home">ASHLY MARTINEZ</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

@@ -1,0 +1,89 @@
+.projectsContainer{                            
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap;           
+    margin: 3rem auto;
+    max-width: 1300px;        
+    padding: 4rem;
+    /* border: 1px solid red; */
+    animation: fadeIn linear both;
+    animation-timeline: view(); 
+    animation-range: entry 50% cover 30%;
+}
+
+.projectsTitle{
+    content: center;
+    font-size: clamp(3rem, 4vw, 5rem); 
+    margin-bottom: 1.5rem;
+}
+
+.projectsCards{
+    /* border: 1px solid #0b31ef; */
+    
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap;          
+    gap: 2rem;                        
+    padding: 2rem;
+}
+
+.projectCard{
+    border: 1px solid #B8927A;
+    margin-bottom: 0.5rem;
+    flex:1;
+    padding: 2rem;
+    min-width: 380px;
+    border-radius: 2rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projectSkillsWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border:1px solid red; */  
+}
+
+.skills{
+    padding:.2rem;
+   
+    
+}
+
+
+.skillText{
+    border-radius: 1rem;
+    padding:.4rem;
+    border: 1px solid #B8927A;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(250px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-scroll, .fade-in-element {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+    .projectsCards {
+        flex-direction: column;
+    }
+}
+

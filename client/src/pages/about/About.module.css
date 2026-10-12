@@ -1,15 +1,19 @@
+
+.dummyDiv{
+    height:100px;
+}
+
 .aboutContainer {
     display: flex;
     flex-direction: row; 
     justify-content: center;   
     flex-wrap: wrap;          
-    gap: 3rem;                 
+    gap: 6rem;        
     margin: 3rem auto;
     max-width: 1300px;        
-    padding: 2rem;
-    /*border: 1px solid green;*/
+    padding: 5rem;
+    /* border: 1px solid red; */
     animation: fade-in 3s ease;
-    
 }
 
 .aboutTextContatiner {
@@ -19,7 +23,7 @@
     /*border: 1px solid red;*/
 }
 
-.aboutTitle { 
+.aboutName { 
     font-size: clamp(3rem, 4vw, 5rem); /* Font scaling */
     margin-bottom: 0.5rem;
     
@@ -53,7 +57,4 @@
     .aboutContainer {
         flex-direction: column;
     }
-    
-   
-
 }
