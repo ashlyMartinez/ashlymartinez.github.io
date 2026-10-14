@@ -8,7 +8,7 @@
     /* border: 1px solid red; */
     animation: fadeIn linear both;
     animation-timeline: view(); 
-    animation-range: entry 50% cover 30%;
+    animation-range: entry 10% cover 30%;
 }
 
 .projectsTitle{
@@ -19,7 +19,6 @@
 
 .projectsCards{
     /* border: 1px solid #0b31ef; */
-    
     display: flex;
     justify-content: center;   
     flex-wrap: wrap;          
@@ -45,9 +44,7 @@
 }
 
 .skills{
-    padding:.2rem;
-   
-    
+    padding:.2rem; 
 }
 
 
