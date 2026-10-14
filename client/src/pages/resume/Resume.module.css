@@ -9,19 +9,35 @@
     animation: fadeIn linear both;
     animation-timeline: view(); 
     animation-range: entry 10% cover 30%;
-    gap:2rem;
+    
 }
 
 .resumeTitle{
-    font-size: clamp(3rem, 4vw, 5rem); 
-    margin-bottom: 1.5rem;
-    text-align: center;
-    
+    font-size: clamp(3rem, 4vw, 5rem);
+}
 
+.experienceCards{
+
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap;          
+    gap: 2rem;                        
+    padding: 2rem;
+}
+
+.experiencesContainer{
+    border: 1px solid #B8927A;
+    margin-bottom: 0.5rem;
+    padding: 2rem;
+    min-width: 380px;
+    border-radius: 2rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    gap: 2rem;
 }
 
 .educationContainer, 
-.skillsContainer{
+.skillsContainer, 
+.experiencesContainer{
     border: 1px solid #B8927A;
     margin-bottom: 0.5rem;
     flex:1;
@@ -29,7 +45,11 @@
     min-width: 380px;
     border-radius: 2rem;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    gap: 2rem;
 }
+
+
+
 
 
 
@@ -40,7 +60,7 @@
 
 
 
-.resumeSkillsWrapper{
+.skillsWrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -49,7 +69,6 @@
 
 .skills{
     padding:.2rem; 
-    
 }
 
 
@@ -83,3 +102,10 @@
     transform: none !important;
   }
 }
+
+@media (max-width: 768px) {
+    .experienceCards {
+        flex-direction: column;
+    }
+}
+
