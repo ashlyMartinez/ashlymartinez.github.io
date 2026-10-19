@@ -15,13 +15,12 @@
     padding: 5rem;     
     gap: 6rem;        
          
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.758);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   
+    border: 1px solid #b7b6b538;
     border-radius: 2rem;
-  
-    border: 1px solid rgba(255, 255, 255, 0.9);
   
     box-shadow: 0 20px 40px rgba(147, 197, 253, 0.15),
               0 4px 12px rgba(0, 0, 0, 0.03),
@@ -29,10 +28,10 @@
 
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.4s ease;
+  
 }
     
   
-
 .aboutContainer:hover {
   
   transform: translateY(-4px);
@@ -50,7 +49,6 @@
 .aboutName { 
     margin-bottom: 1rem;
    
-    
     font-size: clamp(3rem, 5vw, 6rem); 
     font-weight: 100;
     letter-spacing: 0.06em;
@@ -104,7 +102,7 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: #242425; 
+  color: #535355; 
   transition: color 0.2s ease;
 }
 
@@ -137,4 +135,8 @@
         width: 90%;
     }
 }
+
+
+
+
 

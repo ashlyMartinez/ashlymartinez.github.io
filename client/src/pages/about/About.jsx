@@ -10,6 +10,7 @@ export default function About(){
         </div>
         <div className = {styles.aboutContainer} >
             
+            
             <div className = {styles.aboutTextContatiner}>
                 <h3 className = {styles.aboutName}> Ashly Martinez</h3>
                 <p className = {styles.aboutPosition}> Entry Level: Full Stack Developer</p>
@@ -18,9 +19,8 @@ export default function About(){
 
             <div className = {styles.headShotContainer}>
                 <img src = {headShot} className={styles.headShot}width="290px" height="330px"/>
-
             </div>
-            <div class={styles.scrollIndicator}>
+            <div className={styles.scrollIndicator}>
                 <a href="#projects" aria-label="Scroll down to About Me">
                     <span></span>
                     <svg className={styles.arrowIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -35,3 +35,4 @@ export default function About(){
         
     )
 }
+
