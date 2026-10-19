@@ -8,12 +8,12 @@ function App() {
  
 
   return (
-    <>
     
-    <NavBar />
-    {/* <div id="a"> 
-      
-    </div> */}
+    
+   
+    <div id = "appWrapper">
+      <NavBar />
+    
     <div id = "aboutMe"> 
       <About />
     </div>
@@ -24,8 +24,11 @@ function App() {
     <div id = "resume">
       <Resume />
     </div>
+      
+    </div>
     
-    </>
+    
+   
   )
 }
 
