@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 
@@ -55,6 +56,7 @@ nav a {
   align-items: center;
   width: 100%;
   
+  
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.12em;
@@ -69,7 +71,7 @@ nav a {
 
 
 nav a:hover {
-  color: #6c6664bd;
+  color: #76220476;
 }
 
 

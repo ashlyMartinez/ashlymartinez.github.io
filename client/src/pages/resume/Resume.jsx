@@ -8,18 +8,18 @@ export default function Resume(){
        
         
         <div className = {styles.resumeContainer}>
-            <h3 className = {styles.resumeTitle}>Resume</h3>
+            <h3 className = {styles.resumeTitle}>RESUME</h3>
             <div className = {styles.experienceCards}>
 
             
                 <div className = {styles.educationContainer}>
-                    <p className={styles.sectionTitle}>Education</p>
+                    <p className={styles.sectionTitle}>EDUCATION</p>
                     <p className = {styles.schoolName}>{resume.education.school}</p>
                     <p className = {styles.gradDate}>{resume.education.date}</p>
                     <p className = {styles.degreeName}>{resume.education.degree}</p>
                 </div>
                 <div className = {styles.skillsContainer}>
-                    <p className={styles.sectionTitle}>Skills</p>
+                    <p className={styles.sectionTitle}>SKILLS</p>
                     <div className = {styles.skillsWrapper}>
                         {resume.skills.map((skill, idx) => (
                             <div className={styles.skills}>
@@ -29,7 +29,7 @@ export default function Resume(){
                     </div>
                 </div>
                 <div className = {styles.experiencesContainer}>
-                    <p className={styles.sectionTitle}>Experience</p>
+                    <p className={styles.sectionTitle}>EXPERIENCE</p>
                     <div className ={styles.experiencesWrapper}>
                         {
                             resume.experiencesList.map((experience, idx)=>
