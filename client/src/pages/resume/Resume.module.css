@@ -1,34 +1,41 @@
 .resumeContainer{
     display: flex;
     justify-content: center;   
-    flex-wrap: wrap;           
+    flex-wrap: wrap;  
+
     margin: 3rem auto;
     max-width: 1300px;        
     padding: 4rem;
+    
 
-
-   
     background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+   
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 2rem;
   
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 2rem; 
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06),
-              0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 40px rgba(147, 197, 253, 0.15),
+              0 4px 12px rgba(0, 0, 0, 0.03),
+              inset 0 1px 0 rgba(255, 255, 255, 1);
 
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s ease;
+
+              
+
     animation: fadeIn linear both;
     animation-timeline: view(); 
     animation-range: entry 10% cover 30%;
 }
 
+
+
 .resumeTitle{
-    font-size: clamp(3rem, 4vw, 5rem);
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    font-size: clamp(3rem, 4vw, 5rem); 
+     color:rgb(53, 23, 0);
+    font-size: clamp(3rem, 5vw, 6rem); 
+    font-weight: 100;
+    letter-spacing: 0.06em;
 }
 
 .experienceCards{
@@ -53,6 +60,14 @@
     border-radius: 2rem;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
    
+}
+
+.educationContainer:hover, 
+.skillsContainer:hover, 
+ .experiencesContainer:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px rgba(70, 90, 110, 0.12),
+              inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .sectionTitle{
@@ -115,7 +130,7 @@
 
 @media (max-width: 1250px) {
     .resumeContainer{
-        width: 92%;
+        width: 90%;
     }
 }
 

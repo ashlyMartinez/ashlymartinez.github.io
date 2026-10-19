@@ -20,7 +20,16 @@ export default function About(){
                 <img src = {headShot} className={styles.headShot}width="290px" height="330px"/>
 
             </div>
+            <div class={styles.scrollIndicator}>
+                <a href="#projects" aria-label="Scroll down to About Me">
+                    <span></span>
+                    <svg className={styles.arrowIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </a>
+            </div>
         </div>
+        
 
         </>
         

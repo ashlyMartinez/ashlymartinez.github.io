@@ -6,7 +6,7 @@ export default function Projects(){
     return (
         <div className ={styles.projectsContainer}>
 
-            <h3 className={styles.projectsTitle} >PROJECTS</h3>
+            <h3 className={styles.projectsTitle}>PROJECTS</h3>
 
             <div className = {styles.projectsCards}>
                
