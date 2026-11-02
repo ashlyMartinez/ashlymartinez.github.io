@@ -1,19 +1,30 @@
+import insyteCover from "../../assets/insyteCover.png"
+import cineTrackCover from "../../assets/cineCover.png"
 const projectArray = [
     {
         id: 0, 
         name: "Insyte", 
-        description: "Built a React web application that enables users to search and analyze App Store data.Integrated iTunes Search API with React frontend to enable real-time app search and review data analysis. Designed responsive React Bootstrap dashboards to visualize app metadata and review analytics. Implemented concurrent Python threads to fetch and batch iTunes review data in parallel, reducing data retrieval time. Developed Python logic to analyze review volume and trends across date ranges", 
-        skills: ["React", "JavaScript", "Python", "HTML / CSS" ]
-    }, 
-    {
-        id:1, 
-        name: "petAdoption",
-        description: "This is a react web application that displays mock pet data for an audience of interested adopters", 
-        skills: ["React", "JavaScript", "HTML / CSS"]
+        image: insyteCover,
+        githubUrl: "https://github.com/isabellachakmakian/Insyte",
+        description: [
+            "Built a full-stack web application using React and Django to search and analyze mobile app data.",
+            "Connected the iTunes Search API to fetch, organize, and display live App Store ratings and customer reviews.",
+            "Designed clean dashboard components to view app rating trends and highlight user reviews."
+        ],
+        skills: ["React", "JavaScript", "Python", "HTML / CSS"]
     },
-    
-
-
+    {
+        id: 1, 
+        name: "CineTrack", 
+        image: cineTrackCover,
+        githubUrl: "https://github.com/ashlyMartinez/cineTrack",
+        description: [
+            "Developing a full-stack movie tracking app using React to explore, rate, and discover films.",
+            "Built responsive, reusable React UI components for interactive movie cards, detail views, and rating controls.",
+            "Drafted custom database schemas and backend models to support user ratings and personalized recommendations."
+        ],
+        skills: ["React", "JavaScript", "Supabase", "HTML / CSS"]
+    }
 ]
 
 

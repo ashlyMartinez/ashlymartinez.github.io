@@ -1,119 +1,214 @@
 .resumeContainer{
-    display: flex;
-    justify-content: center;   
-    flex-wrap: wrap;  
-
-    margin: 3rem auto;
-    max-width: 1300px;        
-    padding: 4rem;
-    
-
-    background: rgba(255, 255, 255, 0.758);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-  
-    border: 1px solid #b7b6b538;
-    border-radius: 2rem;
-  
-    box-shadow: 0 20px 40px rgba(147, 197, 253, 0.15),
+  display: flex;
+  justify-content: center;   
+  flex-wrap: wrap;  
+  margin: 3rem auto;
+  max-width: 1300px;        
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.758);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid #b7b6b538;
+  border-radius: 2rem;
+  box-shadow: 0 20px 40px rgba(147, 197, 253, 0.15),
               0 4px 12px rgba(0, 0, 0, 0.03),
               inset 0 1px 0 rgba(255, 255, 255, 1);
-
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.4s ease;
-
-    animation: fadeIn linear both;
-    animation-timeline: view(); 
-    animation-range: entry 10% cover 30%;
+  animation: fadeIn linear both;
+  animation-timeline: view(); 
+  animation-range: entry 10% cover 30%;
 }
 
 
+.resumeHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
 
 .resumeTitle{
-     color:rgb(53, 23, 0);
-    font-size: clamp(3rem, 5vw, 6rem); 
-    font-weight: 100;
-    letter-spacing: 0.06em;
+  margin: 0;
+  color:rgb(53, 23, 0);
+  font-size: clamp(3rem, 5vw, 6rem); 
+  font-weight: 100;
+  letter-spacing: 0.06em;
 }
 
-.experienceCards{
-    display: flex;
-    justify-content: center;   
-    flex-wrap: wrap;          
-    gap: 2rem;                        
-    padding: 2rem;
-    
+.downloadButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.1rem;
+
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(183, 182, 181, 0.35);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  color: #333;
+
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-
-.educationContainer, 
-.skillsContainer, 
-.experiencesContainer{  
-    margin-bottom: 0.5rem;
-    flex:1;
-    padding: 2rem;
-    min-width: 380px;
-    gap: 2rem;
-    
-    background: rgba(255, 255, 255, 0.758);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-  
-    border: 1px solid #b7b6b538;
-    border-radius: 2rem;
-  
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s ease;
+.downloadButton:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
 }
+
+.glassCard {
+  flex:1;
+  min-width: 380px;
+  background: rgba(255, 255, 255, 0.758);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid #b7b6b538;
+  border-radius: 2rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.glassCard:hover {
+  transform: translateY(-4px);
+}
+
+.experienceCards {
+  display: flex;
+  justify-content: center;   
+  flex-wrap: wrap;          
+  gap: 2rem;                        
+  padding: 2rem;
+}
+
 
 .educationContainer:hover, 
 .skillsContainer:hover, 
- .experiencesContainer:hover{
-    
+.experiencesContainer:hover {
   transform: translateY(-4px);
+  
   
 }
 
 
-.sectionTitle{
-    margin-bottom: 1.5rem;
-
-    font-size:1.25rem;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    
+.sectionTitle {
+  font-size:1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
 }
 
-.skillsWrapper{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* border:1px solid red; */  
+/* Education Section */
+.educationDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.skills{
-    padding:.2rem; 
+.schoolName {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.degreeName {
+  font-size:1rem;
+  color: #555;
+  margin: 0.25rem 0 0 0;
+}
+
+.gradDate {
+  font-size: 0.975rem;
+  color: #777;
+  margin: 0;
+}
+
+.skillsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+  padding: 0.35rem 0.85rem;
+  
+}
+
+.skillText {
+  font-size: 0.93rem;
+  color: #444;
+  margin: 0;
 }
 
 
-.skillText{
-    padding:.4rem;
-
-    font-size:.9rem;
-    font-weight: 450;
-    letter-spacing: 0.04em;
-    
-
-    border: 1px solid #b7b6b58d;
-    border-radius: 1rem;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
-    
+.experiencesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
 }
 
+.experienceWrapper + .experienceWrapper {
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
 
+.experienceInfoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.85rem;
+}
 
+.title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.experienceDate {
+  font-size: 0.93rem;
+  color: #777;
+  margin: 0;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.85rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.bulletItem {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding-left: 0.85rem;
+  border-left: 2px solid rgba(0, 0, 0, 0.15); 
+  transition: border-color 0.3s ease;
+}
 
 @keyframes fadeIn {
   from {
