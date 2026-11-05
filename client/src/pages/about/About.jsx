@@ -14,7 +14,7 @@ export default function About(){
             <div className = {styles.aboutTextContatiner}>
                 <h3 className = {styles.aboutName}> Ashly Martinez</h3>
                 <p className = {styles.aboutPosition}> Entry Level: Full Stack Developer</p>
-                <p className = {styles.aboutParagraph}>Electrical Engineering and Computer Science graduate from UC Berkeley with hands-on software engineering experience across full-stack web development and data pipelines. Proficient in Python, JavaScript, and React, with a track record of building production-facing applications, integrating third-party APIs, and shipping well-tested code across internship and project roles.</p>
+                <p className = {styles.aboutParagraph}>Electrical Engineering and Computer Science graduate from UC Berkeley with hands-on software engineering experience across full-stack web development and data pipelines. Proficient in Python, JavaScript, and React, with a track record of integrating third-party APIs and shipping well-tested code across internships and projects.</p>
             </div>
 
             <div className = {styles.headShotContainer}>

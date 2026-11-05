@@ -5,7 +5,7 @@ const resume = {
         degree: "B.S., Electrical Engineering and Computer Science"
     },
 
-    skills: ["JavaScript", "Python", "Node", "Express.js", "PostgreSQL", "React.js", "HTML / CSS", "Git / GitHub Vite"], 
+    skills: ["JavaScript", "Python", "Node", "Express.js", "PostgreSQL", "React.js", "HTML / CSS", "Git / GitHub", "Vite"], 
     experiencesList: [{
         title: "Software Engineering Intern, LA-Tech.org", 
 
