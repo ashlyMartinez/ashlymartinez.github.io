@@ -1,7 +1,7 @@
 
 import styles from './About.module.css'
 import headShot from '../../assets/headshot.png'
-
+import ProfileLinks from '../../components/ProfileLinks'
 export default function About(){
     return(
         <>
@@ -13,13 +13,20 @@ export default function About(){
             
             <div className = {styles.aboutTextContatiner}>
                 <h3 className = {styles.aboutName}> Ashly Martinez</h3>
+                
                 <p className = {styles.aboutPosition}> Entry Level: Full Stack Developer</p>
+                
                 <p className = {styles.aboutParagraph}>Electrical Engineering and Computer Science graduate from UC Berkeley with hands-on software engineering experience across full-stack web development and data pipelines. Proficient in Python, JavaScript, and React, with a track record of integrating third-party APIs and shipping well-tested code across internships and projects.</p>
+                
+                <ProfileLinks />
             </div>
-
+            
             <div className = {styles.headShotContainer}>
                 <img src = {headShot} className={styles.headShot}width="290px" height="330px"/>
             </div>
+            
+            
+
             <div className={styles.scrollIndicator}>
                 <a href="#projects" aria-label="Scroll down to About Me">
                     <span></span>
