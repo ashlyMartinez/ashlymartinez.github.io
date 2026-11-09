@@ -75,7 +75,7 @@ export default function Resume(){
                             <polyline points="7 10 12 15 17 10"></polyline>
                             <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg>
-                        <span>Download PDF Resume</span>
+                        <span>Download Resume PDF</span>
                     </a>
 
                 </div>
